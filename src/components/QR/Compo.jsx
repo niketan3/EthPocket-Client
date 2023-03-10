@@ -1,5 +1,5 @@
 import React, { Component, useContext } from 'react'
-import QrReader from 'react-weblineindia-qrcode-scanner'
+import { QrReader } from 'react-qr-reader'
 import { TransactionContext } from '../../context/TransactionContex'
 import linkAudion from "../../assets/tune.mp3"
 const Compo = ()=> {
@@ -37,7 +37,7 @@ const Compo = ()=> {
         <p1 className="text-white semibold">Scanning....</p1>
         <p2 className="text-white">
           {
-            QrResult && (
+            (
               <p>address:{QrResult}</p>
             )
           }
